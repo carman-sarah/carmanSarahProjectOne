@@ -5,12 +5,16 @@
 
 body {
     font-size: 62.5%;
+    font-weight: 400;
 }
 
 h1,
 li,
 a,
-ul {
+ul,
+h2, 
+p,
+button {
     margin: 0;
     padding: 0;
 }
@@ -48,7 +52,36 @@ h1 {
     top: 50px;
 }
 
+// styling discovering section
 
-* {
-    outline: 1px red solid;
+.discovering {
+    background: $white;
+    padding: 150px 0;
+    .wrapper {
+        display: flex;
+        padding: 30px;
+    }
 }
+
+.textContent {
+    width: 80%;
+    padding-right: 100px;
+    h2 {
+        @include h2Font;
+    }
+    p {
+        @include bodyFont;
+        margin: 10px 0;
+    }
+    button {
+        @include buttonFont;
+        @include buttonStyle;
+        margin-top: 10px;
+    }
+}
+
+.photoContent img {
+    box-shadow: $brightYellow -20px 20px;
+
+}
+
