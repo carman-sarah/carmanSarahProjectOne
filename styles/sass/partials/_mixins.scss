@@ -1,7 +1,8 @@
 @mixin h1Font() {
     font-family: 'Kumar One Outline', cursive;
-    font-size: 4.5rem;
-    line-height: 70px;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 64px;
     width: 50%;
     text-transform: uppercase;
 }
@@ -23,7 +24,7 @@
 
 @mixin navFont {
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 29px;
     letter-spacing: 1.4px;
