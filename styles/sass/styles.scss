@@ -1,6 +1,7 @@
 @import "./partials/variables";
 @import "./partials/mixins";
 @import "./partials/setup";
+@import "./partials/navigation";
 
 body {
     font-size: 62.5%;
@@ -8,7 +9,8 @@ body {
 
 h1,
 li,
-a {
+a,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -26,6 +28,19 @@ header {
     background-size: contain;
 }
 
-nav {
-    @include navFont;
+.blueCouch {
+    width: 55%;
+    position: relative;
+    bottom: -100px;
+}
+
+h1 {
+    @include h1Font;
+
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
 }

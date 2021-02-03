@@ -1,0 +1,22 @@
+nav {
+    @include navFont;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    li {
+        margin: 20px 15px;
+    }
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            border-bottom: solid 1.5px $brightYellow;
+            padding-bottom: 5px;
+        }
+    }
+}
+
