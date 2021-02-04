@@ -98,3 +98,34 @@ h1 {
 }
 
 // styling icon section
+
+.iconSection {
+    padding: 80px 0;
+}
+
+.iconContainer {
+    display: flex;
+    padding: 20px 0;
+}
+
+.icon {
+    @include bodyFont;
+    display: flex;
+    width: 50%;
+    h2 {
+        @include h2Font;
+    }
+    .iconFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        font-size: 1.5rem;
+        background-color: $brightYellow;
+        border-radius: 50%;
+        max-height: 50px;
+        min-width: 50px;
+    }
+}
+
+
