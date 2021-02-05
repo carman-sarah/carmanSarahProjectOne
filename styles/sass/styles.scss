@@ -33,7 +33,7 @@ img {
     margin: 0 auto;
 }
 
-header {
+header.indexPage {
     background-image: url("./assets/header-home.jpg");
     background-repeat: no-repeat;
     height: 100vh;
@@ -196,3 +196,14 @@ h1 {
     }
 }
 
+// styling contact page 
+    // styling header
+
+    .contactPage {
+        background: url(./assets/contact-image.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: contain;
+    }
+
+    

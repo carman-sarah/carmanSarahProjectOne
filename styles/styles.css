@@ -318,7 +318,7 @@ img {
   margin: 0 auto;
 }
 
-header {
+header.indexPage {
   background-image: url("./assets/header-home.jpg");
   background-repeat: no-repeat;
   height: 100vh;
@@ -586,4 +586,11 @@ h1 {
 .styleContainer button:hover, .styleContainer button:focus {
   background: #F8FB05;
   color: #151514;
+}
+
+.contactPage {
+  background: url(./assets/contact-image.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: contain;
 }
