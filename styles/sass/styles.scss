@@ -4,8 +4,11 @@
 @import "./partials/navigation";
 @import "./partials/footer";
 
-body {
+html {
     font-size: 62.5%;
+}
+
+body {
     font-weight: 400;
 }
 
@@ -57,7 +60,7 @@ h1 {
 
 .discovering {
     background: $white;
-    padding: 150px 0;
+    padding: 100px 0;
     .wrapper {
         margin-top: 100px;
         display: flex;
@@ -196,8 +199,9 @@ h1 {
     }
 }
 
-// styling contact page 
-    // styling header
+// styling contact page //
+
+// styling header
 
     .contactPage {
         background: url(./assets/contact-image.jpg);
@@ -206,4 +210,23 @@ h1 {
         background-size: contain;
     }
 
-    
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-top: 15px;
+    }
+
+    .logoText {
+        @include logoFont;
+        width: 20%;
+        outline: 1px solid green;
+    }
+
+    .contactPage h1 {
+        left: 0;
+        top: 80px;
+    }
+

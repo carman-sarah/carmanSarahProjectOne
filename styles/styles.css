@@ -237,7 +237,7 @@ html {
 
 nav {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 29px;
   letter-spacing: 1.4px;
@@ -254,7 +254,7 @@ nav ul {
 }
 
 nav li {
-  margin: 20px 15px;
+  margin: 20px;
 }
 
 nav a {
@@ -288,8 +288,11 @@ footer a:hover, footer a:focus {
   color: #F8FB05;
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+
+body {
   font-weight: 400;
 }
 
@@ -333,7 +336,7 @@ header.indexPage {
 
 h1 {
   font-family: 'Kumar One Outline', cursive;
-  font-size: 4rem;
+  font-size: 6.8rem;
   font-weight: 400;
   line-height: 64px;
   width: 50%;
@@ -345,7 +348,7 @@ h1 {
 
 .discovering {
   background: #F5F5F5;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .discovering .wrapper {
@@ -362,7 +365,7 @@ h1 {
 
 .textContent h2 {
   font-family: 'Kumar One', cursive;
-  font-size: 2rem;
+  font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
@@ -370,15 +373,15 @@ h1 {
 
 .textContent p {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 32px;
   letter-spacing: 2px;
   margin: 10px 0;
 }
 
 .textContent button {
   font-family: 'Kumar One', cursive;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
@@ -427,8 +430,8 @@ h1 {
 
 .icon {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 32px;
   letter-spacing: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +441,7 @@ h1 {
 
 .icon h2 {
   font-family: 'Kumar One', cursive;
-  font-size: 2rem;
+  font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
@@ -475,14 +478,14 @@ h1 {
       grid-template-columns: repeat(2, 1fr);
   gap: 100px;
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 32px;
   letter-spacing: 2px;
 }
 
 .programSection h2 {
   font-family: 'Kumar One', cursive;
-  font-size: 2rem;
+  font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
@@ -494,7 +497,7 @@ h1 {
 
 .programSection button {
   font-family: 'Kumar One', cursive;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
@@ -541,8 +544,8 @@ h1 {
 
 .styleContainer {
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 32px;
   letter-spacing: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +565,7 @@ h1 {
 
 .styleContainer h2 {
   font-family: 'Kumar One', cursive;
-  font-size: 2rem;
+  font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
@@ -570,7 +573,7 @@ h1 {
 
 .styleContainer button {
   font-family: 'Kumar One', cursive;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
@@ -593,4 +596,31 @@ h1 {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: contain;
+}
+
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.logoText {
+  font-family: 'Kumar One', cursive;
+  font-size: 2.2rem;
+  line-height: 24px;
+  letter-space: 1.2px;
+  width: 20%;
+  outline: 1px solid green;
+}
+
+.contactPage h1 {
+  left: 0;
+  top: 80px;
 }
