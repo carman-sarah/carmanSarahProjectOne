@@ -210,47 +210,49 @@ h1 {
 
 // styling header
 
-    .contactPage {
-        background: url(./assets/contact-image.jpg);
-        background-repeat: no-repeat;
-        height: 72vh;
-        background-size: contain;
-    }
+.contactPage {
+    background: url(./assets/contact-image.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+}
 
-    .navContainer {
-        display: flex;
-        justify-content: space-between;
-    }
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .logo {
-        margin-top: 15px;
-    }
+.logo {
+    margin-top: 15px;
+}
 
-    .logoText {
-        @include logoFont;
-        width: 20%;
-    }
+.logoText {
+    @include logoFont;
+    width: 20%;
+}
 
-    .contactPage h1 {
-        left: 0;
-        top: 80px;
-    }
+.contactPage h1 {
+    left: 0;
+    top: 80px;
+}
 
 // styling contact section
 
-    .contactContainer {
-        display: flex;
-    }
+section.contact {
+    background-color: $ice;
+    height: 50vh;
+}
 
-    .contactForm {
-        outline: 2px solid salmon;
-        width: 75%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+.contactContainer {
+    display: flex;
+}
 
-    .contactText {
-        outline: 2px solid blue;
-        width: 25%;
-    }
+.contactForm {
+    outline: 2px solid salmon;
+    width: 75%;
+}
+
+.contactText {
+    outline: 2px solid blue;
+    width: 25%;
+}
