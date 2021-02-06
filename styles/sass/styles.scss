@@ -3,6 +3,7 @@
 @import "./partials/setup";
 @import "./partials/navigation";
 @import "./partials/footer";
+@import "./partials/form";
 
 html {
     font-size: 62.5%;
@@ -18,9 +19,15 @@ a,
 ul,
 h2, 
 p,
-button {
+button,
+input,
+form {
     margin: 0;
     padding: 0;
+}
+
+input {
+    border: none;
 }
 
 img {
@@ -206,7 +213,7 @@ h1 {
     .contactPage {
         background: url(./assets/contact-image.jpg);
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 72vh;
         background-size: contain;
     }
 
@@ -222,7 +229,6 @@ h1 {
     .logoText {
         @include logoFont;
         width: 20%;
-        outline: 1px solid green;
     }
 
     .contactPage h1 {
@@ -230,3 +236,21 @@ h1 {
         top: 80px;
     }
 
+// styling contact section
+
+    .contactContainer {
+        display: flex;
+    }
+
+    .contactForm {
+        outline: 2px solid salmon;
+        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .contactText {
+        outline: 2px solid blue;
+        width: 25%;
+    }
