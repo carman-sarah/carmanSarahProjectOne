@@ -4,10 +4,24 @@ form {
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    padding: 40px;
+    border: 2px solid green;
 }
 
 input {
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email] {
+    border-bottom: 1px solid $evergreen;
+}
+
+input[type=textarea] {
+    border: 1px solid $evergreen;
 }
 
 .formName,

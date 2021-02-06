@@ -19,9 +19,7 @@ a,
 ul,
 h2, 
 p,
-button,
-input,
-form {
+button {
     margin: 0;
     padding: 0;
 }
@@ -240,19 +238,23 @@ h1 {
 
 section.contact {
     background-color: $ice;
-    height: 50vh;
+    // height: 50vh;
 }
 
 .contactContainer {
     display: flex;
+    height: 350px;
 }
 
 .contactForm {
     outline: 2px solid salmon;
-    width: 75%;
+    width: 60%;
+    // transform: scale(1.2)
 }
 
 .contactText {
     outline: 2px solid blue;
-    width: 25%;
+    width: 40%;
+    @include bodyFont;
+    padding: 50px;
 }

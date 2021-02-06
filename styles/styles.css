@@ -300,10 +300,24 @@ form {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100%;
+  padding: 40px;
+  border: 2px solid green;
 }
 
 input {
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email] {
+  border-bottom: 1px solid #065635;
+}
+
+input[type=textarea] {
+  border: 1px solid #065635;
 }
 
 .formName,
@@ -334,9 +348,7 @@ a,
 ul,
 h2,
 p,
-button,
-input,
-form {
+button {
   margin: 0;
   padding: 0;
 }
@@ -665,21 +677,26 @@ h1 {
 
 section.contact {
   background-color: #E0FDDF;
-  height: 50vh;
 }
 
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 350px;
 }
 
 .contactForm {
   outline: 2px solid salmon;
-  width: 75%;
+  width: 60%;
 }
 
 .contactText {
   outline: 2px solid blue;
-  width: 25%;
+  width: 40%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding: 50px;
 }
