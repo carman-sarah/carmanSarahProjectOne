@@ -2,8 +2,8 @@
 @import "./partials/mixins";
 @import "./partials/setup";
 @import "./partials/navigation";
-@import "./partials/footer";
 @import "./partials/form";
+@import "./partials/footer";
 
 html {
     font-size: 62.5%;
@@ -320,18 +320,41 @@ section.contact {
         border-right: 7px solid #F8FB05;
         border-bottom: 7px solid #F8FB05;
         margin-right: -19px;
+
+        p {
+            padding-bottom: 20px;
+        }
     }
-
-
 }
 
 
 .mission {
     @include bodyFont;
+    font-size: 1.8rem;
     width: 30%;
+    height: 30%;
+    background-color: $brightYellow;
+    padding: 0 0 20px 20px;
+    margin-top: 100px;
+
+    .imageRight {
+        position: relative;
+        top: -15px;
+    }
 
     h2 {
         @include h2Font;
+        font-size: 2.5rem;
     }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+
 }
 

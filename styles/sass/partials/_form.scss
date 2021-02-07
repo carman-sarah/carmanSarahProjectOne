@@ -22,7 +22,6 @@ input[type=email] {
 input[type=textarea] {
     border: 1px solid $evergreen;
     height: 200px;
-    resize: none;
 }
 
 input::placeholder {
