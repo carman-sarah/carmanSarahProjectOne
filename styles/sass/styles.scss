@@ -38,7 +38,7 @@ img {
 
 .wrapper {
     max-width: 1280px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -281,4 +281,57 @@ section.contact {
     background-repeat: no-repeat;
     height: 70vh;
     background-size: cover;
+
+    h1 {
+        left: 0;
+        top: 150px;
+    }
 }
+
+// styling blog section
+
+.blogSection {
+    background-color: $ice;
+    width: 100%;
+    display: flex;
+}
+
+.blogContainer {
+    @include bodyFont;
+    width: 80%;
+    margin-right: 200px;
+    position: relative;
+    top: -150px;
+
+    h2 {
+        @include h2Font;
+    }
+
+    .leftImage {
+        box-shadow: $brightYellow 20px 20px;
+        position: relative;
+        top: 20px;
+        z-index: 1;
+    }
+    
+    .blogText {
+        background-color: $white;
+        padding: 80px 25px 20px 125px;
+        border-right: 7px solid #F8FB05;
+        border-bottom: 7px solid #F8FB05;
+        margin-right: -19px;
+    }
+
+
+}
+
+
+.mission {
+    @include bodyFont;
+    width: 30%;
+
+    h2 {
+        @include h2Font;
+    }
+}
+

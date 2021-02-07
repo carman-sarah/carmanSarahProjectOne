@@ -426,7 +426,7 @@ img {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -777,4 +777,68 @@ section.contact {
   background-repeat: no-repeat;
   height: 70vh;
   background-size: cover;
+}
+
+.blogPage h1 {
+  left: 0;
+  top: 150px;
+}
+
+.blogSection {
+  background-color: #E0FDDF;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogContainer {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  width: 80%;
+  margin-right: 200px;
+  position: relative;
+  top: -150px;
+}
+
+.blogContainer h2 {
+  font-family: 'Kumar One', cursive;
+  font-size: 3.3rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+.blogContainer .leftImage {
+  -webkit-box-shadow: #F8FB05 20px 20px;
+          box-shadow: #F8FB05 20px 20px;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+
+.blogContainer .blogText {
+  background-color: #F5F5F5;
+  padding: 80px 25px 20px 125px;
+  border-right: 7px solid #F8FB05;
+  border-bottom: 7px solid #F8FB05;
+  margin-right: -19px;
+}
+
+.mission {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  width: 30%;
+}
+
+.mission h2 {
+  font-family: 'Kumar One', cursive;
+  font-size: 3.3rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
