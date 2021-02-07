@@ -393,9 +393,29 @@ section.contact {
         }
 
         .userComment {
-            border: 2px solid red;
             width: 50%;
             padding-bottom: 50px;
         }
+    }
+}
+
+// styling form section 
+
+.formSection {
+    background-color: $ice;  
+    .commentForm {
+        width: 60%;
+    }
+
+    form {
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    form,
+    input, 
+    textarea {
+        background-color: $ice;
+        box-shadow: none;
     }
 }
