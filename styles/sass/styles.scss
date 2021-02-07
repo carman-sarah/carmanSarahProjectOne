@@ -19,7 +19,8 @@ a,
 ul,
 h2, 
 p,
-button {
+button,
+input{
     margin: 0;
     padding: 0;
 }
@@ -243,18 +244,33 @@ section.contact {
 
 .contactContainer {
     display: flex;
-    height: 350px;
 }
 
 .contactForm {
-    outline: 2px solid salmon;
     width: 60%;
-    // transform: scale(1.2)
+    position: relative;
+    top: -135px;
 }
 
 .contactText {
-    outline: 2px solid blue;
     width: 40%;
     @include bodyFont;
-    padding: 50px;
+    padding: 50px 50px 50px 150px;
 }
+
+.contactText i {
+    margin-right: 17px;
+}
+
+.contactIcons {
+    color: $evergreen;
+}
+
+.contactIcons,
+.infoEmail {
+    margin-bottom: 15px;
+}
+
+
+
+

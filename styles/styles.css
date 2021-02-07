@@ -294,15 +294,14 @@ form {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100%;
   padding: 40px;
-  border: 2px solid green;
+  -webkit-box-shadow: #F8FB05 20px 20px;
+          box-shadow: #F8FB05 20px 20px;
 }
 
 input {
@@ -318,11 +317,54 @@ input[type=email] {
 
 input[type=textarea] {
   border: 1px solid #065635;
+  height: 200px;
+  resize: none;
+}
+
+input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+
+input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+
+input::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.formName {
+  margin-right: 10px;
 }
 
 .formName,
 .formEmail {
-  width: 50%;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.formMessage {
+  margin-bottom: 20px;
 }
 
 .formMessage,
@@ -332,6 +374,22 @@ input[type=textarea] {
 
 .formSubmit > button {
   width: 100%;
+  font-family: 'Kumar One', cursive;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #065635;
+  color: #F5F5F5;
+  border: none;
+  padding: 5px 10px 2px 10px;
+  text-align: center;
+}
+
+.formSubmit > button:hover, .formSubmit > button:focus {
+  background: #F8FB05;
+  color: #151514;
 }
 
 html {
@@ -348,7 +406,8 @@ a,
 ul,
 h2,
 p,
-button {
+button,
+input {
   margin: 0;
   padding: 0;
 }
@@ -683,20 +742,32 @@ section.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 350px;
 }
 
 .contactForm {
-  outline: 2px solid salmon;
   width: 60%;
+  position: relative;
+  top: -135px;
 }
 
 .contactText {
-  outline: 2px solid blue;
   width: 40%;
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
-  padding: 50px;
+  padding: 50px 50px 50px 150px;
+}
+
+.contactText i {
+  margin-right: 17px;
+}
+
+.contactIcons {
+  color: #065635;
+}
+
+.contactIcons,
+.infoEmail {
+  margin-bottom: 15px;
 }
