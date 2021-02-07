@@ -205,12 +205,12 @@ h1 {
     }
 }
 
-// styling contact page //
+// ------ styling contact page ------- //
 
 // styling header
 
 .contactPage {
-    background: url(./assets/contact-image.jpg);
+    background: url("./assets/contact-image.jpg");
     background-repeat: no-repeat;
     height: 70vh;
     background-size: cover;
@@ -272,5 +272,11 @@ section.contact {
 }
 
 
+// ------ styling blog page ------- //
 
+// styling header
 
+.blogPage {
+    background-image: url("../assets/blog-image.jpg");
+    background-color: pink;
+}

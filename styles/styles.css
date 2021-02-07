@@ -701,7 +701,7 @@ h1 {
 }
 
 .contactPage {
-  background: url(./assets/contact-image.jpg);
+  background: url("./assets/contact-image.jpg");
   background-repeat: no-repeat;
   height: 70vh;
   background-size: cover;
@@ -770,4 +770,9 @@ section.contact {
 .contactIcons,
 .infoEmail {
   margin-bottom: 15px;
+}
+
+.blogPage {
+  background-image: url("../assets/blog-image.jpg");
+  background-color: pink;
 }
