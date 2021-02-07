@@ -355,6 +355,47 @@ section.contact {
         margin-bottom: 15px;
     }
 
-
 }
 
+// styling comment section
+
+.comments {
+    background-color: $ice;
+    margin-top: -80px;
+    @include bodyFont;
+    font-size: 1.8rem;
+
+    p {
+        padding-bottom: 10px;
+
+        span {
+            line-height: 0;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    h2 {
+        @include h2Font;
+        font-size: 2.5rem;
+    }
+
+    .user {
+        display: flex;
+
+        .displayPhoto {
+            max-width: 80px;
+            max-height: 80px;
+            width: 20%;
+            margin-right: 30px;
+            position: relative;
+            top: 10px;
+        }
+
+        .userComment {
+            border: 2px solid red;
+            width: 50%;
+            padding-bottom: 50px;
+        }
+    }
+}
