@@ -773,6 +773,8 @@ section.contact {
 }
 
 .blogPage {
-  background-image: url("../assets/blog-image.jpg");
-  background-color: pink;
+  background: url(./assets/blog-image.jpg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
 }
