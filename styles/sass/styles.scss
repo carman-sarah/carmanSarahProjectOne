@@ -331,12 +331,20 @@ section.contact {
 
 .contactContainer {
     display: flex;
+
+    @include portraitMQ {
+        flex-direction: column;
+    }
 }
 
 .contactForm {
     width: 60%;
     position: relative;
     top: -135px;
+
+    @include portraitMQ {
+        width: auto;
+    }
 }
 
 .contactText {
@@ -346,6 +354,14 @@ section.contact {
 
     @include tabletMQ {
         padding-left: 115px;
+    }
+
+    @include portraitMQ {
+        margin-top: -115px;
+        width: 100%;
+        padding: 50px 0 50px 0;
+        padding-left: 0;
+        text-align: center;
     }
 }
 

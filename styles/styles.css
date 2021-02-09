@@ -883,10 +883,25 @@ section.contact {
   display: flex;
 }
 
+@media screen and (max-width: 780px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contactForm {
   width: 60%;
   position: relative;
   top: -135px;
+}
+
+@media screen and (max-width: 780px) {
+  .contactForm {
+    width: auto;
+  }
 }
 
 .contactText {
@@ -901,6 +916,16 @@ section.contact {
 @media screen and (max-width: 980px) {
   .contactText {
     padding-left: 115px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contactText {
+    margin-top: -115px;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
