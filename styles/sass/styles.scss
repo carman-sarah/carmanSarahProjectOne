@@ -163,7 +163,6 @@ h1 {
         padding: 0;
         }
     }
-}
 
 .icon {
     @include bodyFont;
@@ -386,6 +385,10 @@ section.contact {
     background-color: $ice;
     width: 100%;
     display: flex;
+
+    @include portraitMQ {
+        flex-direction: column;
+    }
 }
 
 .blogContainer {
@@ -394,6 +397,10 @@ section.contact {
     margin-right: 200px;
     position: relative;
     top: -150px;
+    
+    @include tabletMQ {
+        margin-right: 15%;
+    }
 
     h2 {
         @include h2Font;
@@ -429,9 +436,19 @@ section.contact {
     padding: 0 0 20px 20px;
     margin-top: 100px;
 
+    @include portraitMQ {
+        display: flex;
+        width: 80%;
+        margin-top: -50px;
+    }
+
     .imageRight {
         position: relative;
         top: -15px;
+
+        @include portraitMQ {
+            margin-right: 20px;
+        }
     }
 
     h2 {
@@ -456,6 +473,11 @@ section.contact {
     margin-top: -80px;
     @include bodyFont;
     font-size: 1.8rem;
+
+    @include portraitMQ {
+        margin-top: 0px;
+        padding-top: 50px;
+    }
 
     p {
         padding-bottom: 10px;
@@ -487,6 +509,10 @@ section.contact {
         .userComment {
             width: 50%;
             padding-bottom: 50px;
+
+            @include portraitMQ {
+                width: 100%;
+            }
         }
     }
 }
@@ -497,6 +523,10 @@ section.contact {
     background-color: $ice;  
     .commentForm {
         width: 60%;
+
+        @include portraitMQ {
+            width: 100%;
+        }
     }
 
     form {

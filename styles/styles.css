@@ -614,9 +614,6 @@ h1 {
             flex-direction: column;
     padding: 0;
   }
-  .iconContainer:last-child {
-    padding-top: 20px;
-  }
 }
 
 .icon {
@@ -633,6 +630,7 @@ h1 {
 @media screen and (max-width: 780px) {
   .icon {
     width: 100%;
+    padding-top: 20px;
   }
 }
 
@@ -939,6 +937,15 @@ section.contact {
   display: flex;
 }
 
+@media screen and (max-width: 780px) {
+  .blogSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .blogContainer {
   font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
@@ -948,6 +955,12 @@ section.contact {
   margin-right: 200px;
   position: relative;
   top: -150px;
+}
+
+@media screen and (max-width: 980px) {
+  .blogContainer {
+    margin-right: 15%;
+  }
 }
 
 .blogContainer h2 {
@@ -991,9 +1004,25 @@ section.contact {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 780px) {
+  .mission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin-top: -50px;
+  }
+}
+
 .mission .imageRight {
   position: relative;
   top: -15px;
+}
+
+@media screen and (max-width: 780px) {
+  .mission .imageRight {
+    margin-right: 20px;
+  }
 }
 
 .mission h2 {
@@ -1021,6 +1050,13 @@ section.contact {
   line-height: 32px;
   letter-spacing: 2px;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 780px) {
+  .comments {
+    margin-top: 0px;
+    padding-top: 50px;
+  }
 }
 
 .comments p {
@@ -1062,12 +1098,24 @@ section.contact {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 780px) {
+  .comments .user .userComment {
+    width: 100%;
+  }
+}
+
 .formSection {
   background-color: #E0FDDF;
 }
 
 .formSection .commentForm {
   width: 60%;
+}
+
+@media screen and (max-width: 780px) {
+  .formSection .commentForm {
+    width: 100%;
+  }
 }
 
 .formSection form {
