@@ -82,7 +82,7 @@
 }
 
 @mixin navMQ {
-    @media screen and (max-width: 675px) {
+    @media screen and (max-width: 715px) {
         @content;
     }
 }

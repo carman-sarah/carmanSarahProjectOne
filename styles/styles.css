@@ -248,7 +248,7 @@ nav .fa-bars {
   visibility: hidden;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 715px) {
   nav .fa-bars {
     visibility: visible;
   }
@@ -264,7 +264,7 @@ nav ul {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 715px) {
   nav ul {
     visibility: hidden;
   }
@@ -931,7 +931,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .logo {
@@ -1037,7 +1037,7 @@ section.contact {
 }
 
 .blogPage .navContainer {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .blogPage .wrapper {
