@@ -343,6 +343,7 @@ h1 {
 .navContainer {
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -432,6 +433,10 @@ section.contact {
     height: 70vh;
     background-size: cover;
 
+    .navContainer {
+        overflow-x: hidden;
+    }
+
     .wrapper {
         position: relative;
     }
@@ -462,6 +467,7 @@ section.contact {
     @include portraitMQ {
         flex-direction: column;
     }
+
 }
 
 .blogContainer {
@@ -493,6 +499,10 @@ section.contact {
         border-bottom: 7px solid #F8FB05;
         margin-right: -19px;
 
+        @include mobileMQ {
+            padding: 80px 25px 20px 25px;
+        }
+
         p {
             padding-bottom: 20px;
         }
@@ -513,6 +523,11 @@ section.contact {
         display: flex;
         width: 80%;
         margin-top: -50px;
+    }
+
+    @include mobileMQ {
+        flex-direction: column;
+        margin-top: -80px;
     }
 
     .imageRight {
@@ -577,6 +592,11 @@ section.contact {
             margin-right: 30px;
             position: relative;
             top: 10px;
+
+            @include portraitMQ {
+                width: 0;
+                margin-right: 0;
+            }
         }
 
         .userComment {

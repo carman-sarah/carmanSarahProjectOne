@@ -395,6 +395,8 @@ textarea::placeholder {
   border: none;
   padding: 10px 12px 2px 12px;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .formSubmit > button:hover, .formSubmit > button:focus {
@@ -590,6 +592,8 @@ h1 {
   border: none;
   padding: 10px 12px 2px 12px;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   margin-top: 10px;
 }
 
@@ -763,6 +767,8 @@ h1 {
   border: none;
   padding: 10px 12px 2px 12px;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   margin-top: 20px;
   padding: 10px 10px 2px 10px;
 }
@@ -891,6 +897,8 @@ h1 {
   border: none;
   padding: 10px 12px 2px 12px;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   margin-top: 20px;
 }
 
@@ -923,6 +931,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -1027,6 +1036,10 @@ section.contact {
   background-size: cover;
 }
 
+.blogPage .navContainer {
+  overflow-x: hidden;
+}
+
 .blogPage .wrapper {
   position: relative;
 }
@@ -1106,6 +1119,12 @@ section.contact {
   margin-right: -19px;
 }
 
+@media screen and (max-width: 550px) {
+  .blogContainer .blogText {
+    padding: 80px 25px 20px 25px;
+  }
+}
+
 .blogContainer .blogText p {
   padding-bottom: 20px;
 }
@@ -1130,6 +1149,16 @@ section.contact {
     display: flex;
     width: 80%;
     margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -80px;
   }
 }
 
@@ -1210,6 +1239,13 @@ section.contact {
   margin-right: 30px;
   position: relative;
   top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .comments .user .displayPhoto {
+    width: 0;
+    margin-right: 0;
+  }
 }
 
 .comments .user .userComment {
