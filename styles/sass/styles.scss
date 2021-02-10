@@ -48,6 +48,16 @@ header.indexPage {
     height: 100vh;
     background-size: cover;
 
+    .wrapper {
+        position: relative;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 0;
+        top: 45px;
+    }
+
     @include tabletMQ {
         height: auto;
     }
@@ -68,6 +78,11 @@ h1 {
     @include tabletMQ {
         font-size: 6.8vw;
         left: 15%;
+    }
+
+    @include mobileMQ {
+        font-size: 8.8vw;
+        left: 5%;
     }
 }
 
@@ -145,6 +160,11 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         padding: 80px 0;
+
+        @include mobileMQ {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
     } 
 }
 
@@ -238,6 +258,10 @@ h1 {
             padding: 0;
             margin: auto;
         }
+
+        @include mobileMQ {
+            margin: 30px auto;
+        }
     }
     .imageLeft {
         box-shadow: $brightYellow 20px 20px;
@@ -280,6 +304,10 @@ h1 {
         padding: 100px 0;
     }
 
+    @include mobileMQ {
+        padding: 40px 0 60px 0;
+    }
+
     h2 {
         @include h2Font;
     }
@@ -300,6 +328,16 @@ h1 {
     background-repeat: no-repeat;
     height: 70vh;
     background-size: cover;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 0;
+        top: 45px;
+    }
 }
 
 .navContainer {
@@ -320,6 +358,11 @@ h1 {
     left: 0;
     top: 80px;
     width: 100%;
+
+    @include mobileMQ {
+        width: 50%;
+        font-size: 5.5rem;
+    }
 }
 
 // styling contact section
@@ -389,9 +432,23 @@ section.contact {
     height: 70vh;
     background-size: cover;
 
+    .wrapper {
+        position: relative;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 0;
+        top: 45px;
+    }
+
     h1 {
         left: 0;
         top: 150px;
+
+        @include mobileMQ {
+            font-size: 5.5rem;
+        }
     }
 }
 

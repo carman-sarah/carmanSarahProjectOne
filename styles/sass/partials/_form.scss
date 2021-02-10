@@ -43,6 +43,10 @@ textarea::placeholder {
 .formEmail {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+
+    @include mobileMQ {
+        width: 100%;
+    }
 }
 
 .formMessage {

@@ -243,6 +243,17 @@ nav {
   letter-spacing: 1.4px;
 }
 
+nav .fa-bars {
+  font-size: 4rem;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 675px) {
+  nav .fa-bars {
+    visibility: visible;
+  }
+}
+
 nav ul {
   list-style-type: none;
   display: -webkit-box;
@@ -251,6 +262,12 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 675px) {
+  nav ul {
+    visibility: hidden;
+  }
 }
 
 nav li {
@@ -349,6 +366,13 @@ textarea::placeholder {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 550px) {
+  .formName,
+  .formEmail {
+    width: 100%;
+  }
+}
+
 .formMessage {
   margin-bottom: 20px;
 }
@@ -443,6 +467,16 @@ header.indexPage {
   background-size: cover;
 }
 
+header.indexPage .wrapper {
+  position: relative;
+}
+
+header.indexPage .fa-bars {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+
 @media screen and (max-width: 980px) {
   header.indexPage {
     height: auto;
@@ -459,7 +493,7 @@ h1 {
   font-family: 'Kumar One Outline', cursive;
   font-size: 6.8rem;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 100%;
   width: 50%;
   text-transform: uppercase;
   position: relative;
@@ -471,6 +505,13 @@ h1 {
   h1 {
     font-size: 6.8vw;
     left: 15%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 8.8vw;
+    left: 5%;
   }
 }
 
@@ -593,6 +634,14 @@ h1 {
       grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 80px 0;
+}
+
+@media screen and (max-width: 550px) {
+  .gallery .galleryContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .iconSection {
@@ -748,6 +797,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .programSection .newLocations {
+    margin: 30px auto;
+  }
+}
+
 .programSection .imageLeft {
   -webkit-box-shadow: #F8FB05 20px 20px;
           box-shadow: #F8FB05 20px 20px;
@@ -810,6 +865,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .styleContainer {
+    padding: 40px 0 60px 0;
+  }
+}
+
 .styleContainer h2 {
   font-family: 'Kumar One', cursive;
   font-size: 3rem;
@@ -845,6 +906,16 @@ h1 {
   background-size: cover;
 }
 
+.contactPage .wrapper {
+  position: relative;
+}
+
+.contactPage .fa-bars {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+
 .navContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,6 +942,13 @@ h1 {
   left: 0;
   top: 80px;
   width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .contactPage h1 {
+    width: 50%;
+    font-size: 5.5rem;
+  }
 }
 
 section.contact {
@@ -949,9 +1027,25 @@ section.contact {
   background-size: cover;
 }
 
+.blogPage .wrapper {
+  position: relative;
+}
+
+.blogPage .fa-bars {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+
 .blogPage h1 {
   left: 0;
   top: 150px;
+}
+
+@media screen and (max-width: 550px) {
+  .blogPage h1 {
+    font-size: 5.5rem;
+  }
 }
 
 .blogSection {

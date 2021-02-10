@@ -2,7 +2,7 @@
     font-family: 'Kumar One Outline', cursive;
     font-size: 6.8rem;
     font-weight: 400;
-    line-height: 64px;
+    line-height: 100%;
     width: 50%;
     text-transform: uppercase;
 }
@@ -76,6 +76,18 @@
 
 @mixin portraitMQ {
     @media screen and (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin navMQ {
+    @media screen and (max-width: 675px) {
+        @content;
+    }
+}
+
+@mixin mobileMQ {
+    @media screen and (max-width: 550px) {
         @content;
     }
 }

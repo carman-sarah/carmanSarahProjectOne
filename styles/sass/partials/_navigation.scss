@@ -1,9 +1,24 @@
 nav {
     @include navFont;
+
+    .fa-bars {
+        font-size: 4rem;
+        visibility: hidden;
+
+        @include navMQ {
+            visibility: visible;
+        }
+    }
+
     ul {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
+
+        @include navMQ {
+            visibility: hidden;
+        }
+
 
     }
     li {
